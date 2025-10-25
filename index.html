@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEIJOS RECANTOS FELIZ</title>
+    <link rel="stylesheet" href="https://icons8.com.br/icons/set/website">
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+     
+    <section id="banner-inicial" class="banner">
+        <div class="banner-overlay"></div> <div class="header-container">
+          <div class="contact-info">
+            <div class="header-container">
+        <a href="tel:+5537998308890">
+            <img src="icons8-phones-64.png" alt="Telefone" class="contact-icon"> 
+            (37)998308890
+        </a>
+
+            <a href="https://www.instagram.com/sitiorecantfeliz?igsh=ZmhpbTZ0YjE5OW10" target="_blank">
+                <img src="icons8-instagram-logo-50.png" alt="Instagram" class="contact-icon">
+                @sitiorecantfeliz
+            </a>
+            
+            <span class="city-info">
+                <img src="icons8-place-marker-96.png" alt="localização" class="contact-icon">Estrela do Indaiá</span>
+
+                <div id="search-bar" class="search-bar-hidden">
+        <input type="text" placeholder="buscar..." id="search-input">
+         <button onclick="performSearch()">Buscar</button>
+    </div>
+
+
+            
+        <a href="#" class="icon-link" title="Carrinho de Compras" id="search-btn-icon">
+                    <img src="icons8-carrinho-de-compras.gif" alt="Carrinho de Compras" class="nav-icon-img">
+                    <span id="cart-count" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="banner-image-container">
+            <img 
+                src="Banner Queijos Recanto Feliz.png" 
+                alt="Descrição da Imagem do Banner Inicial do Sítio Recanto Feliz"
+                class="banner-img"
+            >
+        </div>
+    </section>
+
+    
+
+
+
+<main>
+    <h1>Produtos</h1>
+    <br>Artesanais, autênticos e feitos com paixão: Queijos Recanto Feliz, onde a natureza, se encontra com o sabor.</br>
+    <div class="product-grid-container">
+        <div class="product">
+            <div class="product-name">Queijo De Trança Temperado</div>
+            <img src="Queijo de Trança Temperado.jfif" alt="Queijo De Trança Temperado">
+            <span class="product-price">R$25,00</span>
+            <button onclick="addToCard(Queijo De Trança Temperado,25)">Adicionar Carrinho</button>
+            <button class="buy-pix-btn" onclick="buyNowPix('Queijo De Trança Temperado,25')">Comprar com PIX</button>
+    </div>
+
+<div class="product">
+        <div class="product-name">Queijo Palito Temperado</div>
+        <img src="Queijo Palito Temperado.jfif" alt="Queijo Palito Temperado">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo Palito Temperado,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo Palito Temperado,25')">Comprar com PIX</button>
+</div>
+
+<div class="product">
+        <div class="product-name">Queijo de Trança Mista</div>
+        <img src="Queijo de Trança Mista.jfif" alt="Queijo de Trança Mista">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo de Trança Mista,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo de Trança Mista ,25')">Comprar com PIX</button>
+
+</div>
+  
+
+<div class="product">
+        <div class="product-name">Queijo Nozinho Temperado</div>
+        <img src="Queijo Nozinho Temperado.jfif" alt="Queijo Nozinho Temperado">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo Nozinho Temperado,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo Nozinho Temperado ,25')">Comprar com PIX</button>
+</div>
+    
+
+
+<div class="product">
+        <div class="product-name">Queijo de Trança</div>
+        <img src="Queijo de Trança.jfif" alt="Queijo de Trança">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo de Trança,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo de Trança,25')">Comprar com PIX</button>
+</div>
+
+
+<div class="product">
+        <div class="product-name">Queijo Palito</div>
+        <img src="Queijo Palito.jfif" alt="Queijo Palito">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo Palito,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo Palito,25')">Comprar com PIX</button>
+</div>
+
+
+<div class="product">
+        <div class="product-name">Queijo Nozinho</div>
+        <img src="Queijo Nozinho.jfif" alt="Queijo Nozinho">
+        <span class="product-price">R$25,00</span>
+        <button onclick="addToCard(Queijo Nozinho,25)">Adicionar Carrinho</button>
+        <button class="buy-pix-btn" onclick="buyNowPix('Queijo Nozinho,25')">Comprar com PIX</button>
+</div>
+
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Seu Carrinho</h3>
+        <div id="cart-items">
+            <br>Seu carrinho está vazio</br>
+        </div>
+        <div class="cart-total">
+            <strong>Total</strong><span id="cart-total-value"> R$0,00</span>
+        </div>
+        <button id="checkout-btn">Finalizar Compra</button>
+    </div>
+</div>
+
+<div id="checkout-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn-checkout">&times;</span>
+        <h4>Pagamento-PIX QR code</h4>
+
+        <div class="pix-payment">
+        <p class="Valor-info">Valor total:<strong id="pix-total">R$25,00</strong></p>
+        <div class="qr-code area">
+
+            <img src="" alt="QR code PIX" class="qr-code-img" id="pix-qr-code-img">
+
+            <h5>Escanear com o aplicativo do seu banco</h5>
+
+            <p class="aviso-pix">
+            *AVISO:* Este QR Code. *Confirme o valor na tela do seu banco* antes de finalizar a transação, pois o valor total da compra deve ser digitado manualmente se o QR Code for estático.
+            </p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</main>
+</body>
+</html>
